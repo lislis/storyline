@@ -1,0 +1,259 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #4D4D4D;
+}
+
+html {
+	font-size: 20px;
+	line-height: 1.4;
+	color: #4D4D4D;
+	font-family: 'Lato', sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map_canvas { height: 100% }
+.canvas {
+	width: 100%;
+	height: 100%;
+}
+.logo {
+	width: 314px;
+	height: 100px;
+	text-indent: 99em;
+	margin: 2em auto;
+	overflow: hidden;
+	background-image: url(http://lisapassing.de/storyline/img/StoryLineLogo.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	background-size: contain;
+}
+.phonenumber {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 2em;
+	background-color: white;
+	background-image: url(http://lisapassing.de/storyline/img/BackgroundImage.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.inner {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.inner input {
+	display: block;
+	margin: auto;
+	width: 13em;
+	font-size: 18px;
+}
+.inner input[type="text"] {
+	margin-top: 1.5em;
+	padding: .8em;
+	border: solid 4px #81E393;
+}
+.inner input[type="submit"] {
+	border: solid 4px #81E393;
+	background: #81E393;
+	margin-top: 1.5em;
+	padding: .6em;
+	width: 15em;
+	color: white;
+}
+.close {
+	display: block;
+	margin: 1.5em auto 0;
+	width: 13em;
+	font-size: 18px;
+	border: solid 4px #81E393;
+	background: #81E393;
+	padding: .6em;
+	color: white;
+}
+.claim {
+	margin-bottom: 2em;
+}
+.event-box {
+	display: none;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(http://lisapassing.de/storyline/img/BackgroundImage.png) white;
+}
+.event-box.is-visible {
+	display: block;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+	.logo {
+		width: 472px;
+		height: 170px;
+	}
+	.inner {
+	width: 600px;
+	margin: auto;
+}
+}
+
